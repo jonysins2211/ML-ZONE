@@ -9,6 +9,12 @@ class Database:
         self.tasks = self.db["tasks"]
         self.settings = self.db["settings"]
         self.thumbnails = self.db["thumbnails"]
+        self.admin_logs = self.db["admin_logs"]
+        self.filters = self.db["filters"]
+        self.scanned_files = self.db["scanned_files"]
+        self.links = self.db["links"]
+        self.nsfw_logs = self.db["nsfw_logs"]
+        self.schedules = self.db["schedules"]
         
     async def ping(self):
         """Check database connection"""
