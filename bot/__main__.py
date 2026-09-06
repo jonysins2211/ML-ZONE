@@ -68,6 +68,7 @@ async def main():
         logger.error(f"Bot failed to start: {e}")
         
     finally:
+        if bot.is_connected
         await bot.stop()
         logger.info("Bot stopped!")
 
