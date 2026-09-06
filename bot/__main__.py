@@ -69,7 +69,7 @@ async def main():
         
     finally:
         if bot.is_connected:
-        await bot.stop()
+           await bot.stop()
         logger.info("Bot stopped!")
 
 if __name__ == "__main__":
